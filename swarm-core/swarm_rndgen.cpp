@@ -9,6 +9,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <cstring>
+#include <system_error>
 
 using std::wstring, std::string, std::to_string;
 using std::ifstream;
@@ -21,6 +22,12 @@ namespace swarm::core
     size_t FileRandomNumbersGenerator::random_numbers_count { 0 };
 
     real_t* FileRandomNumbersGenerator::random_numbers_source { };
+
+    real_t FileRandomNumbersGenerator::map_to_segment_from01(
+        real_t r, real_t min, real_t max
+    ) {
+        return min + r * (max - min);
+    }
 
     error_code FileRandomNumbersGenerator::initialize_random_numbers_source(
         const std::wstring& source_filename
@@ -103,6 +110,11 @@ namespace swarm::core
         return result;
     }
 
+    real_t FileRandomNumbersGenerator::next_uniform_double(real_t min, real_t max) noexcept
+    {
+        return map_to_segment_from01(next_uniform_double(), min, max);
+    }
+
     real_t* FileRandomNumbersGenerator::next_n_uniform_double(natural_t n, real_t* dst) noexcept
     {
         size_t diff { random_numbers_count - pos };
@@ -127,7 +139,7 @@ namespace swarm::core
     ) noexcept {
         next_n_uniform_double(n, dst);
         for (natural_t i = 0; i < n; i++)
-            dst[i] = min + dst[i] * (max - min);
+            dst[i] = map_to_segment_from01(dst[i], min, max);
         return dst;
     }
 }
