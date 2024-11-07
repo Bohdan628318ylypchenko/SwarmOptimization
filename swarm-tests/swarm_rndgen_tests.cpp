@@ -6,6 +6,7 @@
 
 #include <string>
 #include <stdexcept>
+#include <system_error>
 
 #ifdef _DEBUG
 #include "memory_leak.h"

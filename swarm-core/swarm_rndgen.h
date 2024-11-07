@@ -15,6 +15,8 @@ namespace swarm::core
 
         size_t pos;
 
+        static real_t map_to_segment_from01(real_t r, real_t min, real_t max);
+
     public:
         static std::error_code initialize_random_numbers_source(
             const std::wstring& source_filename
@@ -28,6 +30,7 @@ namespace swarm::core
         size_t get_pos() const noexcept;
 
         real_t next_uniform_double() noexcept;
+        real_t next_uniform_double(real_t min, real_t max) noexcept;
 
         real_t* next_n_uniform_double(natural_t n, real_t* dst) noexcept;
         real_t* next_n_uniform_double(

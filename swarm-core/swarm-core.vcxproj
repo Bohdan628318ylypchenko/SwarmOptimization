@@ -156,8 +156,11 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="pch_swarm_core.h" />
+    <ClInclude Include="swarm_algorithm.h" />
     <ClInclude Include="swarm_numtypes.h" />
+    <ClInclude Include="swarm_particle.h" />
     <ClInclude Include="swarm_rndgen.h" />
+    <ClInclude Include="swarm_solution.h" />
     <ClInclude Include="swarm_vn.h" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +170,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="swarm_algorithm.cpp" />
+    <ClCompile Include="swarm_particle.cpp" />
     <ClCompile Include="swarm_rndgen.cpp" />
     <ClCompile Include="swarm_vn.cpp" />
   </ItemGroup>

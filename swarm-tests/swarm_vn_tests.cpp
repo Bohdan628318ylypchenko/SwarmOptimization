@@ -62,8 +62,8 @@ namespace swarm::test
             VN vn1 { DIM, coordinates };
             VN vn2 { vn1 };
 
-            Assert::AreEqual(DIM, vn1.dim);
-            Assert::AreEqual(DIM, vn2.dim);
+            Assert::AreEqual(DIM, vn1.get_dim());
+            Assert::AreEqual(DIM, vn2.get_dim());
 
             for (natural_t i = 0; i < DIM; i++)
             {
@@ -84,7 +84,7 @@ namespace swarm::test
             VN vn1 { DIM, coordinates };
             VN vn2 { move(vn1) };
 
-            Assert::AreEqual(DIM, vn2.dim);
+            Assert::AreEqual(DIM, vn2.get_dim());
 
             for (natural_t i = 0; i < DIM; i++)
             {
@@ -110,7 +110,7 @@ namespace swarm::test
             Assert::IsFalse(vn1 == vn2);
         }
 
-        TEST_METHOD(incrplus_operator)
+        TEST_METHOD(mut_add)
         {
             constexpr natural_t DIM { 2 };
             constexpr real_t c2[DIM] { 3, 4 };
@@ -118,7 +118,7 @@ namespace swarm::test
             VN vn1 { DIM, new real_t[DIM] { 1, 2 } };
             VN vn2 { DIM, copy_coordinates(c2, DIM) };
 
-            vn1 += vn2;
+            vn1.mut_add(vn2);
 
             VN expected_vn1 { DIM, new real_t[DIM] { 4, 6 } };
             Assert::IsTrue(vn1 == expected_vn1);
@@ -127,7 +127,7 @@ namespace swarm::test
             Assert::IsTrue(vn2 == expected_vn2);
         }
 
-        TEST_METHOD(plus_operator)
+        TEST_METHOD(mut_add_copy)
         {
             constexpr natural_t DIM { 2 };
             constexpr real_t c1[DIM] { 1, 2 };
@@ -136,7 +136,8 @@ namespace swarm::test
             VN vn1 { DIM, copy_coordinates(c1, DIM) };
             VN vn2 { DIM, copy_coordinates(c2, DIM) };
 
-            VN vn3 { vn1 + vn2 };
+            VN vn3 { vn1 };
+            vn3.mut_add(vn2);
 
             VN expected_vn1 { DIM, copy_coordinates(c1, DIM) };
             Assert::IsTrue(vn1 == expected_vn1);
@@ -148,7 +149,7 @@ namespace swarm::test
             Assert::IsTrue(vn3 == expected_vn3);
         }
 
-        TEST_METHOD(incrminus_operator)
+        TEST_METHOD(mut_subtract)
         {
             constexpr natural_t DIM { 2 };
             const real_t c2[DIM] { 3, 4 };
@@ -156,7 +157,7 @@ namespace swarm::test
             VN vn1 { DIM, new real_t[DIM] { 1, 2 } };
             VN vn2 { DIM, copy_coordinates(c2, DIM) };
 
-            vn1 -= vn2;
+            vn1.mut_subtract(vn2);
 
             VN expected_vn1 { DIM, new real_t[DIM] { -2, -2 } };
             Assert::IsTrue(vn1 == expected_vn1);
@@ -165,7 +166,7 @@ namespace swarm::test
             Assert::IsTrue(vn2 == expected_vn2);
         }
 
-        TEST_METHOD(minus_operator)
+        TEST_METHOD(mut_subtract_copy)
         {
             constexpr natural_t DIM { 2 };
             const real_t c1[DIM] { 1, 2 };
@@ -174,7 +175,8 @@ namespace swarm::test
             VN vn1 { DIM, copy_coordinates(c1, DIM) };
             VN vn2 { DIM, copy_coordinates(c2, DIM) };
 
-            VN vn3 { vn1 - vn2 };
+            VN vn3 { vn1 };
+            vn3.mut_subtract(vn2);
 
             VN expected_vn1 { DIM, copy_coordinates(c1, DIM) };
             Assert::IsTrue(vn1 == expected_vn1);
@@ -186,32 +188,16 @@ namespace swarm::test
             Assert::IsTrue(vn3 == expected_vn3);
         }
 
-        TEST_METHOD(incrmultiply_operator)
+        TEST_METHOD(mut_multiply_on_scalar)
         {
             constexpr natural_t DIM { 2 };
 
             VN vn { DIM, new real_t[DIM] { 5, 2 } };
 
-            vn *= 3.0;
+            vn.mut_multiply_on_scalar(3.0);
 
             VN expected_vn { DIM, new real_t[DIM] { 15, 6 } };
             Assert::IsTrue(vn == expected_vn);
-        }
-
-        TEST_METHOD(multiply_operator)
-        {
-            constexpr natural_t DIM { 2 };
-            const real_t c1[DIM] { 5, 2 };
-
-            VN vn1 { DIM, copy_coordinates(c1, DIM) };
-
-            VN vn2 { vn1 * 3.0 };
-
-            VN expected_vn1 { DIM, copy_coordinates(c1, DIM) };
-            Assert::IsTrue(vn1 == expected_vn1);
-
-            VN expected_vn2 { DIM, new real_t[DIM] { 15, 6 } };
-            Assert::IsTrue(vn2 == expected_vn2);
         }
 
         TEST_METHOD(mod)
