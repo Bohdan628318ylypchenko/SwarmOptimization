@@ -52,8 +52,8 @@ namespace swarm::demo
     {
         const natural_t particle_count_range[]
         {
-            //50, 100, 500, 1000, 1500, 2000, 4000
-            500, 1000
+            100, 1000, 2000, 4000
+            //500, 1000
         };
 
         const vector<real_t> local_weight_range = range(1, 5, 5);
@@ -61,8 +61,8 @@ namespace swarm::demo
 
         const natural_t iteration_count_range[]
         {
-            //100, 1000, 2000, 4000, 8000, 10000, 12000, 20000
-            1000, 2000
+            100, 1000, 2000, 4000, 8000, 10000, 20000
+            //2000
         };
 
         const real_t initial_w_range[]
