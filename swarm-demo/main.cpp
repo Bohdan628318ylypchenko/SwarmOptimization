@@ -21,6 +21,12 @@ int main(void)
     swarm::demo::simple_research();
     cout << "=== ackley: ===" << endl;
     swarm::demo::ackley_research();
+    cout << "=== griewank: ===" << endl;
+    swarm::demo::griewank_research();
+    cout << "=== rastringin: ===" << endl;
+    swarm::demo::rastrigin_research();
+    cout << "=== rosenbrock: ===" << endl;
+    swarm::demo::rosenbrock_research();
 
     FileRandomNumbersGenerator::free_random_numbers_source();
     return 0;

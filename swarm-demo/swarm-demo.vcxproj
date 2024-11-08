@@ -97,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="automatic_optimization.h" />
-    <ClInclude Include="demo_utility.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="target_functions.h" />
   </ItemGroup>
