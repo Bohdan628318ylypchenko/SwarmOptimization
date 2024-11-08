@@ -12,17 +12,17 @@
 #include <cmath>
 #include <execution>
 #include <functional>
+#include <utility>
 
 using ParticleVector = std::vector<swarm::core::Particle>;
 using SolutionVector = std::vector<swarm::core::Solution>;
 using std::transform, std::min_element, std::for_each;
 using std::abs;
 using std::execution::par, std::execution::par_unseq;
+using std::move;
 
 namespace swarm::core
 {
-    static constexpr real_t EPSILON { 1e-2 };
-
     static inline void initialize_particles(
         ParticleVector& particles,
         natural_t dim, natural_t particle_count,
@@ -42,10 +42,11 @@ namespace swarm::core
         real_t local_weight, real_t global_weight,
         real_t max_speed_mod,
         size_t iteration_count,
-        real_t initial_w, size_t comparation_interval,
+        real_t initial_w, size_t comparation_interval, real_t epsilon,
         TargetFunction target_function
     ) {
-        ParticleVector particles { particle_count };
+        ParticleVector particles { };
+        particles.reserve(particle_count);
         initialize_particles(
             particles,
             dim, particle_count,
@@ -73,7 +74,7 @@ namespace swarm::core
 
             if (i % comparation_interval == 0)
             {
-                if (abs(current_min.value - last_min.value) / (real_t)comparation_interval < EPSILON)
+                if (abs(current_min.value - last_min.value) / (real_t)comparation_interval < epsilon)
                     w *= 0.5;
                 last_min = current_min;
             }
@@ -99,7 +100,7 @@ namespace swarm::core
         {
             FileRandomNumbersGenerator generator { i * generator_shift };
 
-            new (&particles[i]) Particle
+            Particle p
             {
                 dim,
                 generator,
@@ -108,6 +109,7 @@ namespace swarm::core
                 max_speed_mod,
                 target_function
             };
+            particles.push_back(move(p));
         }
     }
 

@@ -68,16 +68,19 @@ namespace swarm::core
         if (this == &other)
             return *this;
 
-        if (coordinates)
-            delete[] coordinates;
+        if (dim != other.dim)
+        {
+            if (coordinates) delete[] coordinates;
 
-        coordinates = new real_t[other.dim];
+            coordinates = new real_t[other.dim];
+            dim = other.dim;
+        }
+
         copy_n(
             other.coordinates,
-            other.dim,
+            dim,
             coordinates
         );
-        dim = other.dim;
 
         return *this;
     }
@@ -87,11 +90,11 @@ namespace swarm::core
         if (this == &other)
             return *this;
 
-        if (coordinates)
-            delete[] coordinates;
+        if (coordinates) delete[] coordinates;
 
         coordinates = other.coordinates;
         dim = other.dim;
+
         other.coordinates = nullptr;
 
         return *this;

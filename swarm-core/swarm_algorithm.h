@@ -12,7 +12,7 @@ namespace swarm::core
         real_t local_weight, real_t global_weight,
         real_t max_speed_mod,
         size_t iteration_count,
-        real_t initial_w, size_t comparation_interval,
+        real_t initial_w, size_t comparation_interval, real_t epsilon,
         TargetFunction target_function
     );
 }

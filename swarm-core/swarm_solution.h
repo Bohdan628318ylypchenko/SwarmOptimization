@@ -15,13 +15,5 @@ namespace swarm::core
         Solution():
             pos { }, value { std::numeric_limits<real_t>::lowest() }
         { }
-
-        Solution(VN pos, real_t value):
-            pos { pos }, value { value }
-        { }
-
-        Solution(const Solution& other):
-            pos { other.pos }, value { other.value }
-        { }
     };
 }

@@ -67,11 +67,13 @@ namespace swarm::core
 
         if (current_pos_val < next_pos_val)
         {
-            new (&local_min) Solution { pos, current_pos_val };
+            local_min.pos = pos;
+            local_min.value = current_pos_val;
         }
         else
         {
-            new (&local_min) Solution { next_pos, next_pos_val };
+            local_min.pos = next_pos;
+            local_min.value = next_pos_val;
         }
 
         pos = move(next_pos);
@@ -133,7 +135,8 @@ namespace swarm::core
         real_t pos_value { target_function(pos) };
         if (pos_value < local_min.value)
         {
-            new (&local_min) Solution { pos, pos_value };
+            local_min.pos = pos;
+            local_min.value = pos_value;
         }
     }
 }
