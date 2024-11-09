@@ -61,7 +61,7 @@ namespace swarm::demo
 
         const natural_t iteration_count_range[]
         {
-            100, 1000, 2000, 4000, 8000, 10000, 20000
+            100, 1000, 5000, 10000, 20000
             //2000
         };
 
