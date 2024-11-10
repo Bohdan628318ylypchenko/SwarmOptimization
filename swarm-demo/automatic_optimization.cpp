@@ -56,8 +56,8 @@ namespace swarm::demo
             //500, 1000
         };
 
+        const real_t weight_sum = 6;
         const vector<real_t> local_weight_range = range(1, 5, 5);
-        const vector<real_t> global_weight_range = range(1, 5, 5);
 
         const natural_t iteration_count_range[]
         {
@@ -99,49 +99,46 @@ namespace swarm::demo
             for (auto local_weight : local_weight_range)
             {
                 op.local_weight = local_weight;
-                for (auto global_weight : global_weight_range)
+                op.global_weight = weight_sum - local_weight;
+                for (auto iteration_count : iteration_count_range)
                 {
-                    op.global_weight = global_weight;
-                    for (auto iteration_count : iteration_count_range)
+                    op.iteration_count = iteration_count;
+                    for (auto initial_w : initial_w_range)
                     {
-                        op.iteration_count = iteration_count;
-                        for (auto initial_w : initial_w_range)
+                        op.initial_w = initial_w;
+                        for (auto comparation_interval : comparation_interval_range)
                         {
-                            op.initial_w = initial_w;
-                            for (auto comparation_interval : comparation_interval_range)
+                            op.comparation_interval = comparation_interval;
+                            for (auto epsilon : epsilon_range)
                             {
-                                op.comparation_interval = comparation_interval;
-                                for (auto epsilon : epsilon_range)
+                                op.epsilon = epsilon;
+
+                                Solution s { target_function(op) };
+
+                                pair<OptimizationParameters, Solution> ops { op, s };
+                                
+                                if (min_heap.size() < top_count)
                                 {
-                                    op.epsilon = epsilon;
+                                    min_heap.push(ops);
+                                }
+                                else if (s.value < min_heap.top().second.value)
+                                {
+                                    min_heap.pop();
+                                    min_heap.push(ops);
+                                }
 
-                                    Solution s { target_function(op) };
-
-                                    pair<OptimizationParameters, Solution> ops { op, s };
-                                    
-                                    if (min_heap.size() < top_count)
-                                    {
-                                        min_heap.push(ops);
-                                    }
-                                    else if (s.value < min_heap.top().second.value)
-                                    {
-                                        min_heap.pop();
-                                        min_heap.push(ops);
-                                    }
-
-                                    if ((++i) % 100 == 0)
-                                    {
-                                        cout << "processed " << i << " iterations" << endl;
-                                        cout <<
-                                            "value: " << s.value << "; " <<
-                                            "particle_count: " << op.particle_count << "; " <<
-                                            "local_weight: " << op.local_weight << "; " <<
-                                            "global_weight: " << op.global_weight << "; " <<
-                                            "iteration_count: " << op.iteration_count << "; " <<
-                                            "initial_w: " << op.initial_w << "; " <<
-                                            "comp_interval: " << op.comparation_interval << "; " <<
-                                            "e: " << op.epsilon << endl;
-                                    }
+                                if ((++i) % 100 == 0)
+                                {
+                                    cout << "processed " << i << " iterations" << endl;
+                                    cout <<
+                                        "value: " << s.value << "; " <<
+                                        "particle_count: " << op.particle_count << "; " <<
+                                        "local_weight: " << op.local_weight << "; " <<
+                                        "global_weight: " << op.global_weight << "; " <<
+                                        "iteration_count: " << op.iteration_count << "; " <<
+                                        "initial_w: " << op.initial_w << "; " <<
+                                        "comp_interval: " << op.comparation_interval << "; " <<
+                                        "e: " << op.epsilon << endl;
                                 }
                             }
                         }
