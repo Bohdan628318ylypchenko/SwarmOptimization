@@ -22,6 +22,9 @@ namespace swarm::core
         VN speed;
         FileRandomNumbersGenerator generator;
 
+        VN r1; VN r2;
+        VN local_min_copy; VN global_min_copy;
+
         Solution local_min;
 
         const real_t local_weight;

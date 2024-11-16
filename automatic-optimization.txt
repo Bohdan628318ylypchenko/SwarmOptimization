@@ -1,0 +1,242 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Bohdan\swarm> .\swarm-demo.exe
+=== griewank: ===
+processed 100 iterations
+value: 1.51367; particle_count: 100; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 200 iterations
+value: 1.12181; particle_count: 100; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 300 iterations
+value: 0.0856369; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 400 iterations
+value: 1.37683; particle_count: 1000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 500 iterations
+value: 0.0131571; particle_count: 1000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 600 iterations
+value: 0.00985728; particle_count: 1000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 700 iterations
+value: 1.21154; particle_count: 2000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 800 iterations
+value: 0.0172995; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 900 iterations
+value: 0.01969; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 1000 iterations
+value: 1.12265; particle_count: 4000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 1100 iterations
+value: 5.69494e-09; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 1200 iterations
+value: 0.0147798; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+total iteration count = 1200
+Top 20 best parameter sets:
+i = 0: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 1: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 2: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 3: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 4: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.01
+i = 5: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 6: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 10; e: 0.01
+i = 7: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 8: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1; comp_interval: 10; e: 0.01
+i = 9: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 10: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 1000; e: 0.001
+i = 11: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 12: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 10; e: 0.01
+i = 13: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 14: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 1000; e: 0.01
+i = 15: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 16: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 17: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 18: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 19: value: 0; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.001
+=== rastringin: ===
+processed 100 iterations
+value: 3.97196; particle_count: 100; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 200 iterations
+value: 13.7308; particle_count: 100; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 300 iterations
+value: 1.82982; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 400 iterations
+value: 0.261111; particle_count: 1000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 500 iterations
+value: 6.61223; particle_count: 1000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 600 iterations
+value: 0.493127; particle_count: 1000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 700 iterations
+value: 0.473344; particle_count: 2000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 800 iterations
+value: 3.196; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 900 iterations
+value: 8.13998e-11; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 1000 iterations
+value: 0.247326; particle_count: 4000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 1100 iterations
+value: 0.0259097; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 1200 iterations
+value: 0.0163889; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+total iteration count = 1200
+Top 20 best parameter sets:
+i = 0: value: 0; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 1: value: 0; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 2: value: 5.68434e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.01
+i = 3: value: 5.68434e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 4: value: 5.68434e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 1000; e: 0.01
+i = 5: value: 5.68434e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 6: value: 1.13687e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 7: value: 1.13687e-13; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.01
+i = 8: value: 1.13687e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 9: value: 1.13687e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 10: value: 1.13687e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 11: value: 1.13687e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 12: value: 1.7053e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.001
+i = 13: value: 1.7053e-13; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 14: value: 2.84217e-13; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.001
+i = 15: value: 3.41061e-13; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 16: value: 5.68434e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 17: value: 6.82121e-13; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 18: value: 1.25056e-12; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.01
+i = 19: value: 4.03588e-12; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.01
+=== rosenbrock: ===
+processed 100 iterations
+value: 6595.09; particle_count: 100; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 200 iterations
+value: 6464.36; particle_count: 100; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 300 iterations
+value: 30.8547; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 400 iterations
+value: 6489.27; particle_count: 1000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 500 iterations
+value: 6630.87; particle_count: 1000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 600 iterations
+value: 6416.13; particle_count: 1000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 700 iterations
+value: 6587.04; particle_count: 2000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 800 iterations
+value: 7250.35; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 900 iterations
+value: 27.0766; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 1000 iterations
+value: 199.422; particle_count: 4000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 1100 iterations
+value: 6476.52; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 1200 iterations
+value: 27.6946; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+total iteration count = 1200
+Top 20 best parameter sets:
+i = 0: value: 3.86686; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 1: value: 10.2601; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 2: value: 10.2606; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 3: value: 10.2616; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 5000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 4: value: 10.2654; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 5: value: 10.2663; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 6: value: 10.2678; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 5000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 7: value: 10.2993; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 8: value: 10.3364; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 9: value: 12.9576; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 10: value: 21.2533; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 11: value: 25.2886; particle_count: 4000; local_weight: 1; global_weight: 5; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 12: value: 25.4619; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 13: value: 25.4629; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 14: value: 25.4646; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 15: value: 25.4666; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 16: value: 25.467; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 17: value: 25.4689; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 18: value: 25.7142; particle_count: 4000; local_weight: 1; global_weight: 5; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 19: value: 26.499; particle_count: 4000; local_weight: 1; global_weight: 5; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.001
+=== simple: ===
+processed 100 iterations
+value: 15.4934; particle_count: 100; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 200 iterations
+value: 3.00637; particle_count: 100; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 300 iterations
+value: 0.0081994; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 400 iterations
+value: 4.34721; particle_count: 1000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 500 iterations
+value: 0.000587957; particle_count: 1000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 600 iterations
+value: 1.1094e-13; particle_count: 1000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 700 iterations
+value: 5.70626; particle_count: 2000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 800 iterations
+value: 1.2823e-06; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 900 iterations
+value: 1.0294e-20; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 1000 iterations
+value: 2.33891; particle_count: 4000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 1100 iterations
+value: 1.57643e-11; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 1200 iterations
+value: 8.46873e-31; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+total iteration count = 1200
+Top 20 best parameter sets:
+i = 0: value: 1.89535e-37; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 1: value: 5.59124e-34; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 2: value: 7.9184e-33; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 3: value: 1.52489e-32; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 4: value: 9.88347e-32; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 5: value: 1.04712e-31; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 6: value: 1.68742e-31; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 7: value: 6.86586e-31; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 10; e: 0.001
+i = 8: value: 8.44428e-31; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 9: value: 8.46873e-31; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 10: value: 9.34761e-31; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.001
+i = 11: value: 9.34942e-31; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.01
+i = 12: value: 1.76997e-30; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.01
+i = 13: value: 2.29026e-30; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 14: value: 3.00098e-30; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.01
+i = 15: value: 6.83583e-30; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 16: value: 2.30303e-29; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 17: value: 3.28077e-29; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 18: value: 6.88718e-29; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 19: value: 1.20534e-28; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 1000; e: 0.001
+=== ackley: ===
+processed 100 iterations
+value: 0.513957; particle_count: 100; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 200 iterations
+value: 0.05111; particle_count: 100; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 300 iterations
+value: 0.000745822; particle_count: 100; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 400 iterations
+value: 0.23114; particle_count: 1000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 500 iterations
+value: 3.72595e-10; particle_count: 1000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 600 iterations
+value: 3.19433e-12; particle_count: 1000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 700 iterations
+value: 0.208571; particle_count: 2000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 800 iterations
+value: 1.85185e-13; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 900 iterations
+value: 1.46549e-14; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+processed 1000 iterations
+value: 0.13023; particle_count: 4000; local_weight: 2; global_weight: 4; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+processed 1100 iterations
+value: 2.17604e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 1000; initial_w: 1.2; comp_interval: 10; e: 0.001
+processed 1200 iterations
+value: 1.46549e-14; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+total iteration count = 1200
+Top 20 best parameter sets:
+i = 0: value: 7.54952e-15; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 1: value: 7.54952e-15; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 2: value: 7.54952e-15; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 3: value: 7.54952e-15; particle_count: 4000; local_weight: 5; global_weight: 1; iteration_count: 10000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 4: value: 7.54952e-15; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 5: value: 7.54952e-15; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 6: value: 7.54952e-15; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.001
+i = 7: value: 1.11022e-14; particle_count: 4000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.01
+i = 8: value: 1.11022e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 10; e: 0.01
+i = 9: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 10: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.01
+i = 11: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 10; e: 0.001
+i = 12: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.01
+i = 13: value: 1.46549e-14; particle_count: 2000; local_weight: 5; global_weight: 1; iteration_count: 20000; initial_w: 1.2; comp_interval: 1000; e: 0.001
+i = 14: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 15: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 20000; initial_w: 1; comp_interval: 100; e: 0.001
+i = 16: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 17: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 10000; initial_w: 1.2; comp_interval: 100; e: 0.001
+i = 18: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1; comp_interval: 10; e: 0.001
+i = 19: value: 1.46549e-14; particle_count: 2000; local_weight: 4; global_weight: 2; iteration_count: 5000; initial_w: 1; comp_interval: 100; e: 0.001
+PS C:\Users\Bohdan\swarm>

@@ -18,6 +18,8 @@ namespace swarm::core
         dim { 0 },
         pos { }, speed { },
         generator { 0 },
+        r1 { }, r2 { },
+        local_min_copy { }, global_min_copy { },
         local_min { },
         local_weight { }, global_weight { },
         min_pos_bound { },
@@ -37,6 +39,8 @@ namespace swarm::core
         dim { dim },
         pos { dim }, speed { dim },
         generator { generator },
+        r1 { dim }, r2 { dim },
+        local_min_copy { dim }, global_min_copy { dim },
         local_min { },
         local_weight { local_weight },
         global_weight { global_weight },
@@ -67,11 +71,13 @@ namespace swarm::core
 
         if (current_pos_val < next_pos_val)
         {
-            new (&local_min) Solution { pos, current_pos_val };
+            local_min.pos = pos;
+            local_min.value = current_pos_val;
         }
         else
         {
-            new (&local_min) Solution { next_pos, next_pos_val };
+            local_min.pos = next_pos;
+            local_min.value = next_pos_val;
         }
 
         pos = move(next_pos);
@@ -101,12 +107,10 @@ namespace swarm::core
 
     void Particle::roam(const VN& global_min_pos, real_t w)
     {
-        VN r1 { dim };
         generator.next_n_uniform_double(
             r1.get_dim(), r1.rget_data()
         );
 
-        VN r2 { dim };
         generator.next_n_uniform_double(
             r2.get_dim(), r2.rget_data()
         );
@@ -115,11 +119,11 @@ namespace swarm::core
             .mut_multiply_on_scalar(w)
             .mut_add(
                 r1.mut_multiply_on_scalar(local_weight)
-                  .mut_coordinate_multiply(local_min.pos.copy().mut_subtract(pos))
+                  .mut_coordinate_multiply((local_min_copy = local_min.pos).mut_subtract(pos))
             )
             .mut_add(
                 r2.mut_multiply_on_scalar(global_weight)
-                  .mut_coordinate_multiply(global_min_pos.copy().mut_subtract(pos))
+                  .mut_coordinate_multiply((global_min_copy = global_min_pos).mut_subtract(pos))
             );
 
         if (speed.mod() >= max_speed_mod)
@@ -133,7 +137,8 @@ namespace swarm::core
         real_t pos_value { target_function(pos) };
         if (pos_value < local_min.value)
         {
-            new (&local_min) Solution { pos, pos_value };
+            local_min.pos = pos;
+            local_min.value = pos_value;
         }
     }
 }

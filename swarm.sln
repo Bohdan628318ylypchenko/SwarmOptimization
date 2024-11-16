@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swarm-tests", "swarm-tests\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swarm-demo", "swarm-demo\swarm-demo.vcxproj", "{9B2E8B10-C0AC-402F-96A2-317C4E814C7E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "swarm-setup", "swarm-setup\swarm-setup.vdproj", "{4EFB734D-F869-472E-94F4-5C200270286F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,11 @@ Global
 		{9B2E8B10-C0AC-402F-96A2-317C4E814C7E}.Release|x64.Build.0 = Release|x64
 		{9B2E8B10-C0AC-402F-96A2-317C4E814C7E}.Release|x86.ActiveCfg = Release|x64
 		{9B2E8B10-C0AC-402F-96A2-317C4E814C7E}.Release|x86.Build.0 = Release|x64
+		{4EFB734D-F869-472E-94F4-5C200270286F}.Debug|x64.ActiveCfg = Debug
+		{4EFB734D-F869-472E-94F4-5C200270286F}.Debug|x86.ActiveCfg = Debug
+		{4EFB734D-F869-472E-94F4-5C200270286F}.Release|x64.ActiveCfg = Release
+		{4EFB734D-F869-472E-94F4-5C200270286F}.Release|x64.Build.0 = Release
+		{4EFB734D-F869-472E-94F4-5C200270286F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
