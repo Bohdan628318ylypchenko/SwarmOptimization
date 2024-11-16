@@ -1,0 +1,47 @@
+PS D:\> .\swarm-demo.exe
+=== griewank particle count research: ===
+value = 0.239569
+value = 0.0758497
+value = 0.0197664
+value = 3.33154e-10
+value = 9.34808e-14
+value = 0.0270664
+value = 0
+value = 0.0147798
+=== rastrigin particle count research: ===
+value = 1.6261
+value = 0.0821559
+value = 0.00148483
+value = 0.0632345
+value = 7.95808e-13
+value = 1.8036e-07
+value = 1.13687e-13
+value = 1.13687e-13
+=== rosenbrock particle count research: ===
+value = 6381.81
+value = 346.543
+value = 27.9862
+value = 6515.88
+value = 26.8846
+value = 3.86686
+value = 6503.34
+value = 6352.69
+=== simple particle count research: ===
+value = 0.101886
+value = 0.00654462
+value = 4.83732e-07
+value = 1.24399e-11
+value = 2.45843e-14
+value = 1.96713e-19
+value = 7.9184e-33
+value = 7.73889e-53
+=== ackley particle count research: ===
+value = 0.00170992
+value = 0.000110415
+value = 1.44707e-09
+value = 9.88098e-13
+value = 2.17604e-14
+value = 2.17604e-14
+value = 7.54952e-15
+value = 1.46549e-14
+PS D:\>

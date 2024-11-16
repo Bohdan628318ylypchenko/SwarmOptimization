@@ -34,5 +34,8 @@
     <ClInclude Include="automatic_optimization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="demo_run.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
